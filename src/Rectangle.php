@@ -1,12 +1,16 @@
 <?php
-require 'Shape.php';
 class Rectangle extends Shape{
 
-    public $id;
+    const SHAPE_TYPE = 2;
     public $width;
+
+    public function __construct($newLength, $newWidth)
+    {
+        parent::__construct($newLength, $newWidth);
+    }
 
     public function getFullDescription()
     {
-        return "Rectangle<" . $this->id . ">:" . $this->name . "-" . $this . $this->length . "X" . $this->width;
+        return "Rectangle<" . $this->getid() . ">:" . $this->name . "-" . $this->length . "X" . $this->width;
     }
 }

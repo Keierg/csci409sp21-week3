@@ -3,7 +3,7 @@ class Shape{
     const SHAPE_TYPE = 1;
     public $name;
     protected $length;
-    private $width;
+    protected $width;
     private $id;
 
      function __construct($newLength, $newWidth) {
@@ -31,6 +31,6 @@ class Shape{
     }
 
     public function getFullDescription(){
-         return "Shape<".$this->id.">:".$this->name."-".$this.$this->length."X".$this->width;
+         return "Shape<".$this->id.">:".$this->name."-".$this->length."X".$this->width;
     }
 }
