@@ -1,7 +1,7 @@
 <?php
-require 'src\Shape.php';
-require 'src\Rectangle.php';
-require 'src\Circle.php';
+require 'Shape.php';
+require 'Rectangle.php';
+require 'Circle.php';
 /**
  * Uncomment below line if attempting extra credit
  */
